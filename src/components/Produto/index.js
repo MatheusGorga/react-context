@@ -23,7 +23,7 @@ function Produto({ nome, foto, id, valor, unidade }) {
         </IconButton>
          
           {produtoNoCarrinho?.quantidade || 0}
-         
+          {console.log("reste")} 
 
         <IconButton onClick={() => adicionarProduto({ nome, foto, id, valor })}>
           <AddIcon />
