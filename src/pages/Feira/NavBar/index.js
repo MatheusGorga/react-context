@@ -3,6 +3,7 @@ import { ReactComponent as Logo } from 'assets/logo.svg';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import IconButton from '@material-ui/core/IconButton';
 import Badge from '@material-ui/core/Badge';
+<<<<<<< HEAD
 import { useCarrinhoContext } from 'common/contexts/Carrinho';
 import { useHistory } from 'react-router-dom';
 
@@ -18,6 +19,15 @@ export default function NavBar() {
       >
         <Badge
           badgeContent={quantidadeCarrinho}
+=======
+
+export default function NavBar() {
+  return (
+    <Nav>
+      <Logo />
+      <IconButton>
+        <Badge
+>>>>>>> teste11
           color="primary"
         >
           <ShoppingCartIcon />

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Button, MenuItem, Select, Snackbar, InputLabel } from '@material-ui/core';
 import MuiAlert from '@material-ui/lab/Alert';
 import { useCarrinhoContext } from 'common/contexts/Carrinho';
@@ -51,10 +52,28 @@ function Carrinho() {
             </MenuItem>
           ))}
         </Select>
+=======
+import { Button, Snackbar, InputLabel } from '@material-ui/core';
+import MuiAlert from '@material-ui/lab/Alert';
+import { useState } from 'react';
+import { Container, Voltar, TotalContainer, PagamentoContainer} from './styles';
+
+function Carrinho() {
+  const [openSnackbar, setOpenSnackbar] = useState(false);
+  return (
+    <Container>
+      <Voltar />
+      <h2>
+        Carrinho
+      </h2>
+      <PagamentoContainer>
+        <InputLabel> Forma de Pagamento </InputLabel>
+>>>>>>> teste11
       </PagamentoContainer>
       <TotalContainer>
           <div>
             <h2>Total no Carrinho: </h2>
+<<<<<<< HEAD
             <span>R$ {valorTotal.toFixed(2)}</span>
           </div>
           <div>
@@ -64,14 +83,30 @@ function Carrinho() {
           <div>
             <h2> Saldo Total: </h2>
             <span> R$ {total.toFixed(2)} </span>
+=======
+            <span>R$ </span>
+          </div>
+          <div>
+            <h2> Saldo: </h2>
+            <span> R$ </span>
+          </div>
+          <div>
+            <h2> Saldo Total: </h2>
+            <span> R$ </span>
+>>>>>>> teste11
           </div>
         </TotalContainer>
       <Button
         onClick={() => {
+<<<<<<< HEAD
           comprar();
           setOpenSnackbar(true);
         }}
         disabled={quantidadeCarrinho === 0 || total < 0}
+=======
+          setOpenSnackbar(true);
+        }}
+>>>>>>> teste11
         color="primary"
         variant="contained"
       >

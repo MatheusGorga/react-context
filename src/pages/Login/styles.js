@@ -5,7 +5,10 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   padding: 0 20px;
+<<<<<<< HEAD
 
+=======
+>>>>>>> teste11
   @media(min-width: 768px) {
     margin: 0 auto;
     width: 60%;
