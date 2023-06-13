@@ -12,7 +12,7 @@ function Login() {
     <Container>
       <Titulo>Insira o seu nome</Titulo>
       <InputContainer>
-        <InputLabel>Nome da pessoa</InputLabel>
+        <InputLabel>Nome</InputLabel>
         <Input
           type="text"
           value={nome}
