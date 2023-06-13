@@ -12,7 +12,7 @@ function Carrinho() {
   const history = useHistory();
 
   const [openSnackbar, setOpenSnackbar] = useState(false);
-  const { carrinho, valorTotal } = useCarrinhoContext()
+  const { carrinho, valorTotal, efetuarCompra } = useCarrinhoContext()
   const {tipoPagamento, formaDePagamento, mudarFormaPagamento} = usePagamentoContext()
   const {saldo = 0} = useUsuarioContext()
 
@@ -71,8 +71,9 @@ function Carrinho() {
         </TotalContainer>
       <Button
 
-        disabled={totalCarrinho < 0}
+        disabled={totalCarrinho < 0 || carrinho.length === 0}
         onClick={() => {
+          efetuarCompra()
           setOpenSnackbar(true);
         }}
         color="primary"

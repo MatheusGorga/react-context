@@ -21,9 +21,9 @@ export const UsuarioProvider = ({children}) => {
 
 export const useUsuarioContext = () => {
     const {saldo, setSaldo} = useContext(UsuarioContext)
-
     
     return {
-        saldo
+        saldo,
+        setSaldo
     }
 }
