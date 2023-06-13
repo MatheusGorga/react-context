@@ -42,6 +42,9 @@ export const PagamentoProvider = ({ children }) => {
   );
 };
 
+
+
+
 export const usePagamentoContext = () => {
   const { tipoPagamento, formaDePagamento, setFormaDePagamento } = useContext(PagamentoContext);
     

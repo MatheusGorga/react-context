@@ -11,7 +11,7 @@ function Carrinho() {
   const history = useHistory();
 
   const [openSnackbar, setOpenSnackbar] = useState(false);
-  const { carrinho } = useCarrinhoContext()
+  const { carrinho, valorTotal } = useCarrinhoContext()
   const {tipoPagamento, formaDePagamento, mudarFormaPagamento} = usePagamentoContext()
   
   return (
@@ -54,7 +54,7 @@ function Carrinho() {
       <TotalContainer>
           <div>
             <h2>Total no Carrinho: </h2>
-            <span>R$ </span>
+            <span>R$ {valorTotal}</span>
           </div>
           <div>
             <h2> Saldo: </h2>
