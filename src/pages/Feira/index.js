@@ -8,10 +8,12 @@ import Produto from 'components/Produto';
 import NavBar from './NavBar';
 import { useContext } from 'react';
 import { UsuarioContext } from 'commons/context/Usuarios';
+import { useCarrinhoContext } from 'commons/context/Carrinho';
 
 
 function Feira() {
   const {nome, saldo} = useContext(UsuarioContext)
+
   return (
     <Container>
       <NavBar />
