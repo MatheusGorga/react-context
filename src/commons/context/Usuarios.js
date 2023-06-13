@@ -1,4 +1,4 @@
-import {createContext, useState} from 'react'
+import {createContext, useContext, useState} from 'react'
 
 export const UsuarioContext = createContext();
 
@@ -18,3 +18,12 @@ export const UsuarioProvider = ({children}) => {
     )
 }
 
+
+export const useUsuarioContext = () => {
+    const {saldo, setSaldo} = useContext(UsuarioContext)
+
+    
+    return {
+        saldo
+    }
+}
